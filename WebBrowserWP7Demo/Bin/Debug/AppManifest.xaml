@@ -1,0 +1,6 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="WebBrowserWP7Demo" EntryPointType="WebBrowserWP7Demo.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="WebBrowserWP7Demo" Source="WebBrowserWP7Demo.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+  </Deployment.Parts>
+</Deployment>

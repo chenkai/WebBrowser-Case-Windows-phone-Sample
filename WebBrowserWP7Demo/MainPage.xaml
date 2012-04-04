@@ -23,11 +23,16 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
             <TextBlock x:Name="ApplicationTitle" Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="WebBrowser" FontSize="56" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel>
+                <phone:WebBrowser x:Name="ComponentContent_WB" IsScriptEnabled="True" Height="450"/>
+                <Button x:Name="ExcuteScript_BT" Content="Excute JavaScript" Margin="0,50,0,0" Click="ExcuteScript_BT_Click"></Button>
+            </StackPanel>
+        </Grid>
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->
